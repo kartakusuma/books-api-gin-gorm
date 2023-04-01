@@ -22,7 +22,7 @@ func GetAllBooks(c *gin.Context) {
 	}
 
 	c.JSON(http.StatusOK, gin.H{
-		"books": books,
+		"book": books,
 	})
 }
 
@@ -72,7 +72,7 @@ func CreateBook(c *gin.Context) {
 	}
 
 	c.JSON(http.StatusCreated, gin.H{
-		"message": book,
+		"book": book,
 	})
 }
 
